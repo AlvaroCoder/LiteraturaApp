@@ -1,0 +1,218 @@
+.Body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Header{
+    margin-top: auto;
+    width: 100%;
+    height: 12vh;
+    font-size: 10px;
+    border-bottom: 5px solid #F05454;
+
+    background-color: white;
+}
+.Container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.ctn-Title{
+    padding-top: 5px;
+    width: 15%;
+    height: 95%;
+    background-color:#DED7B1;
+    display: block;
+}
+.Title{
+    font-weight: bold;
+    color: #222831;
+    text-align: center;
+}
+.ctn-Nav1{
+    padding-top: 20px;
+    float: left;
+    width: 50%;
+    height: 100%;
+    display: block;
+}
+.ctn-Nav2{
+    margin: 0px auto;
+    display: block;
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+.Li{
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: #222831;
+    list-style: none;
+    font-size: 15px;
+    transition: 300ms all;
+}
+.Li:hover{
+    color: #30475e;
+}
+.btn-Registrar{
+    margin-top: 15px;
+    text-align: center;
+    height: 40px;
+    border-radius: 20px;
+    width: 50%;
+    background-color: tomato;
+    transition: 300ms all;
+}
+.Li-Register{
+    display: inline-block;
+    color: #222831;
+    list-style: none;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.btn-Registrar:hover{
+    width: 52%;
+    height: 45px;
+}
+
+.ctn-Img,.Imagen{
+    object-fit: cover;
+    width: 100%;
+    height: 70vh;
+}
+.Imagen{
+    opacity: 50%;
+}
+.Frase-author{
+    font-size: 30px;
+    margin-left: 30%;
+}
+.ctn-Frase{
+    margin-top: 2%;
+    margin-left: 25%;
+    width: auto;
+    font-weight: bold;
+    font-size: 35px;
+    color: #222831;
+    position: absolute;
+    z-index: 1;
+}
+.ContainerArticulos{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.Articulo{
+    width: 30%;
+    height: 50vh;
+    background-color: #FFFAFA;
+    display: flex;
+    flex-direction: column;
+}
+.ContainerImagenArticulo,.ImagenArticulo{
+    object-fit: cover;
+    width: 100%;
+    height: 30vh;
+}
+.ContainerTextoArticulo{
+    width: 100%;
+    height: auto;
+
+}
+.ContainerClasificacion{
+    border-left: 2px solid #EF2B7D;
+}
+.Clasificacion{
+    margin-left: 10px;
+}
+.By{
+    font-weight: bolder;
+    font-style: italic;
+}
+.Author{
+    margin-top: -20px;
+    font-weight: lighter;
+    font-size: 15px;
+}
+.Author,.Titulo,.Descripcion{
+    margin-left: 5px;
+}
+.Ctn-Burguer, .Burguer{
+    display: none;
+}
+@media screen and (max-width:850px){
+    .Header{
+        height: 8vh;
+    }
+    .Ctn-Burguer{
+        padding-top: 10px;
+        display: block;
+        width: 7%;
+        height: 90%;
+        cursor: pointer;
+    }
+    .Burguer{
+        display: block;
+        background-color: coral;
+        width: 70%;
+        height: 0.8vh;
+        border-radius: 10px;
+        margin: auto;
+        margin-top: 5px;
+    }
+    .Burguer:hover{
+        margin-top: 6px;
+    }
+    .ctn-Title{
+        font-size: 7px;
+        padding-top: 1px;
+        width: 12%;
+        height: 98%;
+        background-color:#DED7B1;
+        display: block;
+    }
+    .btn-Registrar{
+        margin-top: 5px;
+    }
+    .ctn-Nav1{
+        display: none;
+    }
+    .ContainerArticulos{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .Articulo{
+        margin: auto;
+        width: 90%;
+        height: 40vh;
+        background-color: #FFFAFA;
+        display: flex;
+        flex-direction: row;
+    }
+    .ctn-Frase{
+        margin-top: 2%;
+        margin-left: 25%;
+        width: auto;
+        font-weight: bold;
+        font-size: 25px;
+        color: #222831;
+        position: absolute;
+        z-index: 1;
+    }
+    .ctn-Img,.Imagen{
+        object-fit: cover;
+        width: 100%;
+        height: 55vh;
+    }
+    .Frase-author{
+        font-size: 20px;
+        margin-left: 30%;
+    }
+}
