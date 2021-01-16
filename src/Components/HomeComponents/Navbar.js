@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import {ReactComponent as User} from "/Users/LENOVO/english-app/src/img/user.svg"
+import {ReactComponent as User} from "../img/user.svg"
  
 function Links(props){
     return(
